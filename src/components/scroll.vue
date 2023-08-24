@@ -26,7 +26,7 @@
     </div>
   </div>
 </template>
-<style>
+<style scoped>
 .container {
   /* 设置flex布局 */
   display: flex;
