@@ -4,8 +4,8 @@
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <Icon /> -->
     <!-- <eltree /> -->
-    <!-- <Scroll /> -->
-    <Expandwithback />
+    <Scroll />
+    <!-- <Expandwithback /> -->
     <!-- <slotCpnt>
       www.baidu.com
     </slotCpnt> -->

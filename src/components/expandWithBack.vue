@@ -40,7 +40,7 @@ export default {
 .slide-enter-active,
 .slide-leave-active {
   /* 添加渐变动画 */
-  transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1);
+  transition: all 3s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
 .slide-enter,
