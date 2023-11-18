@@ -3,13 +3,13 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <!-- <Icon /> -->
-    <!-- <eltree />
-    <Scroll />
-    <Expandwithback /> -->
+    <!-- <eltree /> -->
+    <!-- <Scroll /> -->
+    <Expandwithback />
     <!-- <slotCpnt>
       www.baidu.com
     </slotCpnt> -->
-    <OutOfMemoryTestVue />
+    <!-- <OutOfMemoryTestVue /> -->
   </div>
 </template>
 

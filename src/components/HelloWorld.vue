@@ -50,12 +50,15 @@
 <script>
 export default {
   methods: {
+    // 获取选中节点
     getCheckedNodes() {
       console.log(this.$refs.tree.getCheckedNodes());
     },
+    // 获取选中节点的 key
     getCheckedKeys() {
       console.log(this.$refs.tree.getCheckedKeys());
     },
+    // 设置选中指定节点
     setCheckedNodes() {
       this.$refs.tree.setCheckedNodes([
         {
@@ -68,14 +71,17 @@ export default {
         },
       ]);
     },
+    // 通过 key 设置选中节点
     setCheckedKeys() {
       this.$refs.tree.setCheckedKeys([3]);
     },
+    // 清空选中
     resetChecked() {
       // this.$refs.tree.setCheckedKeys([]);
       this.$set(this.num, 0, (this.num[0] += 1));
       console.log(this.num);
     },
+    // 处理勾选变化
     handleCheckChange(data, checked) {
       console.log(data, checked);
       if (this.list.length > 0) {
@@ -94,6 +100,7 @@ export default {
         this.list.push(data);
       }
     },
+    // 处理右键菜单
     handleRowContextmenu(row, b, c) {
       console.log(row, b, c);
       let treeNode = this.findTreeNode(this.$refs.tree.root, row);
@@ -104,6 +111,7 @@ export default {
         this.expandedKeys.push(treeNode.data.id);
       }
     },
+    // 查找树节点
     findTreeNode(root, data) {
       console.log(root, data);
       if (root.data.id === data.id) {
@@ -118,10 +126,11 @@ export default {
       }
       return null;
     },
-    handleNodeContextMenu(e,node){
-      console.log(e,node,"handleNodeContextMenu")
+    // 处理节点右键菜单
+    handleNodeContextMenu(e, node) {
+      console.log(e, node, "handleNodeContextMenu");
       this.$refs.tree.setCurrentKey(node.id);
-    }
+    },
   },
 
   data() {
